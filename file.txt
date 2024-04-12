@@ -1,0 +1,49 @@
+<div class="product-container">
+        <div class="product-block" data-label="pizza">
+            <div class="product-image" style="background-image: url('image-url-1');"></div>
+            <div class="product-details">
+                <p class="product-name">Margherita Pizza</p>
+                <p class="product-description">Dit is de beschrijving van Margherita Pizza.</p>
+                <button class="add-to-cart-button">Bestel Product</button>
+            </div>
+        </div>
+        <div class="product-block" data-label="pasta">
+            <div class="product-image" style="background-image: url('image-url-2');"></div>
+            <div class="product-details">
+                <p class="product-name">Spaghetti Bolognese</p>
+                <p class="product-description">Dit is de beschrijving van Spaghetti Bolognese.</p>
+                <button class="add-to-cart-button">Bestel Product</button>
+            </div>
+        </div>
+        <div class="product-block" data-label="kapsalon">
+            <div class="product-image" style="background-image: url('image-url-3');"></div>
+            <div class="product-details">
+                <p class="product-name">Kapsalon</p>
+                <p class="product-description">Dit is de beschrijving van Kapsalon.</p>
+                <button class="add-to-cart-button">Bestel Product</button>
+            </div>
+        </div>
+        <div class="product-block" data-label="pizza">
+            <div class="product-image" style="background-image: url('image-url-4');"></div>
+            <div class="product-details">
+                <p class="product-name">Pepperoni Pizza</p>
+                <p class="product-description">Dit is de beschrijving van Pepperoni Pizza.</p>
+                <button class="add-to-cart-button">Bestel Product</button>
+            </div>
+        </div>
+        <div class="product-block" data-label="pasta">
+            <div class="product-image" style="background-image: url('image-url-5');"></div>
+            <div class="product-details">
+                <p class="product-name">Lasagna</p>
+                <p class="product-description">Dit is de beschrijving van Lasagna.</p>
+                <button class="add-to-cart-button">Bestel Product</button>
+            </div>
+        </div>
+        <div class="product-block" data-label="kapsalon">
+            <div class="product-image" style="background-image: url('image-url-6');"></div>
+            <div class="product-details">
+                <p class="product-name">Vegetarian Kapsalon</p>
+                <p class="product-description">Dit is de beschrijving van Vegetarian Kapsalon.</p>
+                <button class="add-to-cart-button">Bestel Product</button>
+            </div>
+        </div>
