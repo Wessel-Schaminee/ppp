@@ -5,14 +5,14 @@ session_start();
 
 
 // if (!isset ($_SESSION["username"]) && $checky == 0) {
-//     header("location: dashboard.php");
+//     header("location: pages\dashboard.php");
 
 // }
 
 // if ($_SESSION["rol"] = "3") {
-//     header("Location: dashboard.php");
+//     header("Location: pages\dashboard.php");
 // } else {
-//     header("Location: adminpanel.php");
+//     header("Location: pages\adminpanel.php");
 // }
 ?>
 
@@ -22,17 +22,18 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="../assets/main.css">
     <title>Dashboard</title>
 </head>
 
 <body>
     <div class="header-container">
         <h1 class="head-text">Pasta Paradise Place</h1>
-        <div class="header-button"> <a class="button-header" href="index.php">Home</a> <a class="button-header"
-                href="">Bestellen</a> <a class="button-header" href="order.php">Menu</a> <a class="button-header"
-                href="locatitie.php">Locatie</a> <a class="button-header" href="dashboard.php">Account</a>
-            <form class="but" action="logout.php" method="POST">
+        <div class="header-button"> <a class="button-header" href="../index.php">Home</a> <a class="button-header"
+                href="">Bestellen</a> <a class="button-header" href="../pages\order.php">Menu</a> <a
+                class="button-header" href="locatitie.php">Locatie</a> <a class="button-header"
+                href="dashboard.php">Account</a>
+            <form class="but" action="../functions\logout.php" method="POST">
                 <input class="button-24" role="button" type="submit" value="Log Uit" type="submit" value="">
             </form>
         </div>

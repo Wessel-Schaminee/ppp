@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once 'conn.php';
+require_once '../connection\conn.php';
 
 if (isset($_POST['update'])) {
     $id = $_POST['id'];
@@ -28,14 +28,14 @@ $products = $stmt->fetchAll();
 <html>
 
 <head>
-    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="../assets/main.css">
     <title>Admin Panel</title>
 </head>
 
 <body>
     <div class="container">
         <h1>Detele Users</h1>
-        <form action="delete_user.php" method="post">
+        <form action="../functions/delete_user.php" method="post">
             <div class="form-group">
                 <label for="username_or_id">Username or ID:</label>
                 <input type="text" name="username_or_id" id="username_or_id" required>
@@ -44,7 +44,7 @@ $products = $stmt->fetchAll();
                 <button type="submit">Delete User</button>
             </div>
         </form>
-        <form action="adminpanel.php" method="post" enctype="multipart/form-data">
+        <form action="pages\adminpanel.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" required>
@@ -85,7 +85,7 @@ $products = $stmt->fetchAll();
                         <td><?= htmlspecialchars($product['category']) ?></td>
                         <td><?= htmlspecialchars($product['description']) ?></td>
                         <td>
-                            <form action="adminpanel.php" method="post" enctype="multipart/form-data">
+                            <form action="pages\adminpanel.php" method="post" enctype="multipart/form-data">
                                 <input type="hidden" name="id" value="<?= htmlspecialchars($product['id']) ?>">
                                 <div class="form-group">
                                     <label for="name">Name:</label>

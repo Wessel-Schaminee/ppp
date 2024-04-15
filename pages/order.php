@@ -9,21 +9,21 @@
 <head>
     <title>Bestel menu</title>
     <meta charset="UTF-8">
-    <script src="script.js"></script>
+    <script src="assets\js\script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="../assets/style.css">
 
 </head>
 
 <body>
     <div class="header-container">
-        <a href="index.php">
+        <a href="../index.php">
             <h1 class="head-text">Pasta Paradise Place</h1>
         </a>
         <div class="header-button">
             <a id="signup-header" class="button-header" onclick="showsign()">Maak Account</a>
             <a id="login-header" class="button-header" onclick="showLogin()">Inloggen</a>
-            <a class="button-header" href="order.php">Menu</a>
+            <a class="button-header" href="pages\order.php">Menu</a>
             <a class="button-header" href="">Locatie</a>
             <a class="button-header" href="dashboard.php">Account</a>
         </div>
@@ -33,7 +33,7 @@
             <span class="close-btn"><button class="button-21" onclick="closeSignup()" role="button">X</button></span>
 
             <h2 class="h2-makeaccount">Maak een account!</h2>
-            <form action="accountmaker.php" method="post">
+            <form action="pages\accountmaker.php" method="post">
                 <label class="text-input" for="username">Gebruikersnaam:</label><br>
                 <input type="text" id="username" name="username" required><br>
                 <label class="text-input" for="password">Wachtwoord:</label><br>
@@ -51,7 +51,7 @@
 
 
             <h2 class="h2-makeaccount">Inloggen</h2>
-            <form action="login_process.php" method="post">
+            <form action="functions\login_process.php" method="post">
                 <label class="text-input" for="username">Gebruikersnaam:</label><br>
                 <input type="text" id="username" name="username" required><br>
                 <label class="text-input" for="password">Wachtwoord:</label><br>
@@ -69,9 +69,9 @@
     </div>
     </div>
     <div class="product-container">
-        <?php require_once 'functions.php';
+        <?php require_once '../functions\functions.php';
         $products = get_products();
-        require_once 'products-container.php'; ?>
+        require_once '../pages\products-container.php'; ?>
     </div>
 
 </body>

@@ -3,7 +3,7 @@ session_start();
 
 
 
-require_once 'conn.php';
+require_once 'connection\conn.php';
 
 if (isset($_POST['username_or_id'])) {
     $username_or_id = $_POST['username_or_id'];
@@ -19,6 +19,6 @@ if (isset($_POST['username_or_id'])) {
     $stmt->execute();
 
 
-    header('Location: adminpanel.php');
+    header('Location: pages\adminpanel.php');
 }
 ?>
